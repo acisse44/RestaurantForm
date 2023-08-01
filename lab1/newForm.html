@@ -3,9 +3,16 @@
 <head>
     <title>Chipotle Survey</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <!-- <script type = "text/javascript" src = "myJS.js">  -->
+    <script type = "text/javascript" >
+        function time() {
+            document.getElementById('t1').innerHTML = new Date();
+            setTimeout("time()", 1000);
+        }
+    </script>
 
-<body>
+    </head>
+<body onload = "time()">
     <form>
         <div>
         <center>
@@ -15,15 +22,17 @@
             
     <br>
     <br>
+        
         <h1> Welcome to the Chipotle Survey</h1>
-        <h2>Complete for a chance to win a <span style="color: red;"> FREE </span> Burrito </h2>
-        <h3> 
+        <h2 id = "t1"> Time </h2>
+        <h3>Complete for a chance to win a <span style="color: red;"> FREE </span> Burrito </h3>
            
         <a href = "https://www.chipotle.com/order/?%243p=a_bing_ads&~ad_id=77034719356299&~ad_set_id=3974650119&~ad_set_name=chipotle&~campaign=Brand_Top_Exact&~campaign_id=266313063&~click_id=64c68b8f159c1184cc35ef377fcf3aad&~keyword=chipotle&msclkid=64c68b8f159c1184cc35ef377fcf3aad&utm_source=bing&utm_medium=cpc&utm_campaign=Brand_Top_Exact&utm_term=chipotle&utm_content=chipotle&gclid=CP67o6Tvm4ADFTgUiAkdFqEGXA&gclsrc=ds&_branch_match_id=838614667523584675&_branch_referrer=H4sIAAAAAAAAA42PzU7DMBCEn6Ycm7h27ATJQi2kSMABiVBxi9y1k1qJHRM7%2FLw9OAKlFySO%2B83szs4pBOcvkwRO2g2hV2vh3LrXtkt2JD9kD3dP99PxarUh2HFRH7VtayH9xYqVQtZacsZSTBgqcEY3RfHDvQpRwwUjNEsROudWGMV%2F0yIHYZzQreW7UVhZV4Oryw8B4VyL1zaUYoRTimeh19BFSgnQ%2FJg3KCsAoZwA4Ew1mLEGGiyEjOZOfb4Po1xSjYe%2B%2B8%2FyFEzth2kExWP1eTZK6slwcDCPf74fxaBGs8TO9sEGZcMC2%2B8qkl8%2FUjbQ6s2Q7c2%2Bap%2F1tpP71%2FL2ZRsNfgQu%2FRe2rgcxqwEAAA%3D%3D"> Visit Chipotle Here </h3>
         </a>
         </center>
     </div>
-    <form>
+    
+    <form onsubmit= "createEmail()">
     <div class="container">
         <table>
             <caption>Lets get to know the Chipotle Customer</caption>
@@ -80,13 +89,23 @@
     <textarea rows = "5" cols = "20"></textarea>
 <center>
     <input type="submit" name= "submit" value = "Submit"> 
-    <input type="button" name= "b1" value = "Nothing"> 
+    <!-- <input type="button" name= "b1" value = "Nothing">  -->
     <input type="reset" name= "r1" value = "Reset"> 
     <br>
 </center>
    
 
     </form>
+
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
