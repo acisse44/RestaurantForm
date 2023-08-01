@@ -1,0 +1,60 @@
+/* Other CSS styles for the form and container... */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.input-label {
+    display: block;
+}
+
+/* Change label color when the input is focused */
+input:focus + .input-label {
+    color: #f00; /* Change to the desired color */
+}
+/* Other CSS styles for the form and container... */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.input-label {
+    display: block;
+    transition: color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Change label color on hover */
+input:hover + .input-label {
+    color: #f00; /* Change to the desired color on hover */
+}
+
+/* Change label color when the input is focused */
+input:focus + .input-label {
+    color: #f00; /* Change to the desired color when focused */
+}
