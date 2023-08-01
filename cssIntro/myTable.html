@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form Focus Example</title>
+    <style>
+        input:focus {
+            border: 2px solid blue; /* Apply a blue border when the input is focused */
+            outline: none; /* Remove the default focus outline (use this with caution for accessibility) */
+        }
+
+        button:focus {
+            background-color: yellow; /* Apply a yellow background when the button is focused */
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

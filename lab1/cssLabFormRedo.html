@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chipotle Survey</title>
+    <link rel="stylesheet" type = "text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <a href="https://www.chipotle.com/" class="image-link">
+                        <img width="400" height="350" src="https://cdn.sanity.io/images/kts928pd/production/597fcc47830d8c79aa370672b07829346dd0ba90-3840x2160.png" alt="Chipotle Logo">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h1>Welcome to the Chipotle Survey</h1>
+                    <h2>Complete for a chance to win a <span style="color: red;">FREE</span> Burrito</h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="uname" class="input-label">Name:</label>
+                    <input type="text" id="uname" name="uname" required>
+            
+            
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="Male" id="gender-male">
+                    <label for="gender-male">Male</label>
+                    <input type="radio" name="gender" value="Female" id="gender-female">
+                    <label for="gender-female">Female</label>
+                    <input type="radio" name="gender" value="Other" id="gender-other">
+                    <label for="gender-other">Other</label>
+                    <input type="radio" name="gender" value="Prefer not to say" id="gender-no-answer">
+                    <label for="gender-no-answer">Prefer not to say</label>
+                    <br>
+                    <label for="dob">Enter your date of birth:</label>
+                    <input type="date" name="dob" id="dob">
+                </td>
+                <td>
+                    <label for="address">Home Address:</label>
+                    <input type="text" id="address">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>At Chipotle, What is your Preferred Ingredient?</h3>
+                   
+                        <input type="checkbox" name="ingredient" value="Lettuce" >
+                        <label for="ingredient-lettuce">Lettuce</label><br>
+                        <input type="checkbox" name="ingredient" value="Cilantro" >
+                        <label for="ingredient-lettuce">Cilantro</label><br>
+                        <input type="checkbox" name="ingredient" value="Tomatoes" >
+                        <label for="ingredient-lettuce">Tomatoes</label><br>
+                        <input type="checkbox" name="ingredient" value="Cheese" >
+                        <label for="ingredient-lettuce">Cheese</label><br>
+                    
+                </td>
+            </tr>
+        </table>
+
+        <h3>How would you rate your recent experience at Chipotle?</h3>
+
+            <input type="radio" name="Satitsified" value="Satisfied" >
+            <label for="experience-satisfied">Satisfied</label><br>
+            <input type="radio" name="NotSatisfied" value="NotSatisfied" >
+            <label for="experience-notSatisfied">Not Satisfied</label><br> 
+            <input type="radio" name="LittleSatsified" value="LittleSatisfied" >
+            <label for="experience-littleSatisfied">A Little Satisfied</label><br>
+
+        <h3>How likely are you to recommend Chipotle to a friend?</h3>
+        <select>
+            <option>Never</option>
+            <option>Very Likely</option>
+            <option>Rarely</option>
+            <option>All the time</option>
+        </select>
+
+        <br>
+        <div>
+            <table>
+                <tr>
+                    <th colspan="6">Chipotle Franchises</th>
+                </tr>
+                <tr>
+                    <td colspan="2">Borough:</td>
+                    <td>Bronx</td>
+                    <td>Manhattan</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Yankee Stadium</td>
+                    <td>Flatbush Ave</td>
+                    <td> Herald Square</td>
+                </tr>
+            </table>
+            
+    
+
+        <h4>If you made it here, you're almost done! Watch this video of how we make our Burrito's:</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/65WLfvHGRPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <center>
+            <input type="submit" name="submit" value="Submit">
+        </center>
+
+    </div>
+</body>
+</html>
